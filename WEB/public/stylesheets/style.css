@@ -1,0 +1,38 @@
+a {
+  color: #00B7FF;
+}
+.introduction{
+	background-image: url(/public/images/image1.jpg);
+	display: block;
+	position: relative;
+
+}
+.title{
+	color: #E8EAF6;
+	font-style: "sans-serif";
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-top: 100px;
+}
+.subtitle{
+	color: #E8EAF6;
+	font-style: "sans-serif";
+	padding-left: 50px;
+	padding-right: 5
+}
+.col-md-4.login.login{
+	float: right;
+	text-align: right;
+}
+
+/*.introduction::after {
+  content: "";
+  background: url(/images/image1.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}*/
