@@ -1,18 +1,33 @@
 a {
-  color: #00B7FF;
+  color: #E8EAF6;
 }
-.introduction{
-	background-image: url(/public/images/image1.jpg);
-	display: block;
-	position: relative;
+a:link, a:visited{	
+	color: #E8EAF6;
+	text-decoration: none;
+}
 
+.introduction{
+	background:  
+	  linear-gradient(
+	    rgba(63, 81, 181, 0.45), 
+	    rgba(63, 81, 181, 0.45)
+	  ),
+	  url(/images/image1.jpg);
+	height: 100%;
 }
 .title{
 	color: #E8EAF6;
 	font-style: "sans-serif";
 	padding-bottom: 50px;
 	padding-left: 50px;
-	padding-top: 100px;
+	padding-top: 150px;
+}
+.title2{
+	color: #E8EAF6;
+	font-style: "sans-serif";
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-top: 50px;
 }
 .subtitle{
 	color: #E8EAF6;
@@ -20,19 +35,91 @@ a {
 	padding-left: 50px;
 	padding-right: 5
 }
-.col-md-4.login.login{
+.col-md-1.login.login{
 	float: right;
 	text-align: right;
 }
+.col-md-2.login.login:hover { 
+    background-color: #E8EAF6;
+    color: #3F51B5;
 
-/*.introduction::after {
-  content: "";
-  background: url(/images/image1.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
+}
+h1{
+	font-size: 4em;
+}
+h3{
+	color: #E8EAF6;
+}
+h3.information{
+	color: #3F51B5;
+}
+
+/*h2.information{
+	color: #E8EAF6;
 }*/
+.center{
+	text-align: center;
+}
+.landing-color{
+	color: #3F51B5;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 50px;
+}
+i{
+	padding-top: 5%;
+}
+.describe{
+	background-color: #E8EAF6;
+	height: 60%;
+	color: #3F51B5;
+}
+.container-fluid.phrase{
+	background:  
+		  linear-gradient(
+		    rgba(63, 81, 181, 0.65), 
+		    rgba(63, 81, 181, 0.65)
+		  ),
+		  url(/images/image8.jpg); 
+	color: #E8EAF6;
+	height: 40%;
+	padding: 0px;
+	margin: 0px;
+}
+.ligth{
+	color: #E8EAF6;
+}
+.button-login{
+	margin-left: 40%;
+	width: 20%;
+	background-color: transparent;
+	color: #E8EAF6;
+	font-size: 2em;
+	border: 2px solid #E8EAF6;
+	border-radius: 5px;
+}
+.button-login:hover{
+	margin-left: 40%;
+	width: 20%;
+	background-color: rgba(63, 81, 181, 0.5);
+	color: #E8EAF6;
+	font-size: 2em;
+	border: 2px solid #E8EAF6;
+	border-radius: 5px;
+}
+.drop-down{
+	margin-left: 48%;
+	margin-top: 25%;
+	width: 4%;
+	background-color: transparent;
+}
+#down{
+	animation-name: down;
+}
+@keyframe down{
+	from{}
+	to{}
+
+}
+
+

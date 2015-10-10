@@ -4,11 +4,40 @@ html
 		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+		script(src='/javascripts/function.js')
 	body
 		header.container-fluid.introduction
-				.col-md-4.login.login
-					a.btn.btn-default(href='/login') Login 
-				h1.title Mobile App Hackathon
-				.col-md-8
-					p.subtitle Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+			a(href='/login')
+				.col-md-1.login.login(action='/login')
+					h3 Login 
+			h1.title Mobile App Hackathon
+			.col-md-8
+				h3.subtitle Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+			a(href='#down')
+				.drop-down
+					i.fa.fa-angle-down.fa-5x.ligth
+		main.container-fluid.describe(id='down')
+			.row.center
+				.col-md-4
+					i.fa.fa-map-marker.fa-5x.landing-color
+					h2.information Descubre
+					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+
+				.col-md-4
+					i.fa.fa-mobile.fa-5x.landing-color
+					h2.information Descubre
+					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+
+				.col-md-4
+					i.fa.fa-users.fa-5x.landing-color
+					h2.information Descubre
+					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+		footer.container-fluid.phrase.center
+				h1.title2 Descubre la experiencia de la app
+				a(href='/login')
+					.button-login Entra ahora
+
+
+
 
