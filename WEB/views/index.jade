@@ -1,9 +1,23 @@
 extends layout
+block title_content
+			title Beacon Event
 block content
 		header.container-fluid.introduction
-			a(id='open-popup' href='#' class='openPopup' data-rel='popup' data-transition='pop')
+			a(href='#popup' id='openPopup' data-rel='popup' data-transition='pop')
 				.col-md-1.login.login
 					h3 Login 
+			script.
+				$('#openPopup').click(function(){
+					$('#popup').show("slow", function(){
+						$('#header').css("-animation-name: down; animation-time: 15s;");
+						$('#popup').css("-animation-name: over;");
+						});
+					});
+				$('#close').click(function(){
+					$('#popup').hide("slow", function(){
+						$('#header').css("animation-name: '';");
+						});
+					});
 			.logo-beavent
 			.col-md-8
 				h3.subtitle Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
@@ -31,14 +45,14 @@ block content
 				a(href='#popup')
 					.button-login Entra ahora
 		.open-popup(id='popup' data-role='popup')
-			.col-md-1.login.login
-				a(id='close-popup' href='#')
+			a(href='#close' id='close')
+				.col-md-1.login.login
 					i.fa.fa-times.fa-2x.ligth
 			.col-md-4.form
 				.logo-beavent2
 				h1.title2 Sign In
 				p.ligth Unete a esta maravillosa aventura.
-				form(action='/login' method='POST')
+				form(action='/dashboard' method='POST')
 						input.user(type='text' name='email' placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'")
 						input.user(type='password' name='password' placeholder='Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'")
 						button.login-button(type='submit' name='action') Sign In
