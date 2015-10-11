@@ -1,0 +1,19 @@
+extends dashboard
+block form
+	.content
+		h1 Add new Event
+		.form-event(id='event')
+			form
+				.fisrt
+					h4.tags Nombre del evento
+					input.user(id='name-id' type='text' name='name' placeholder='Nombre...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre...'")
+					h4.tags-rigth ¿En donde se realiza el evento?
+					select(style='position:relative !important')
+						option Elige un lugar
+						option Expo Guadalajara
+					h4.tags ¿Cuando comienza el evento?
+					input.date(id='initial-id' style='position:relative !important' type='date' name='event-date')
+					h4.tags ¿Cuando finaliza el evento?
+					input.date(id='finish-id' style='position:relative !important' type='date' name='event-date')
+					button.send-data(id='send-event-button' type='submit' name='action') 
+						i.fa.fa-send.fa-1x Crear

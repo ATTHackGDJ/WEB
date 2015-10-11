@@ -1,9 +1,7 @@
 extends layout
-block title_content
-			title Beacon Event
 block content
 		header.container-fluid.introduction
-			a(href='#popup' class='openPopup' data-rel='popup' data-transition='pop')
+			a(id='open-popup' href='#' class='openPopup' data-rel='popup' data-transition='pop')
 				.col-md-1.login.login
 					h3 Login 
 			.logo-beavent
@@ -33,8 +31,8 @@ block content
 				a(href='#popup')
 					.button-login Entra ahora
 		.open-popup(id='popup' data-role='popup')
-			a(href='#close')
-				.col-md-1.login.login
+			.col-md-1.login.login
+				a(id='close-popup' href='#')
 					i.fa.fa-times.fa-2x.ligth
 			.col-md-4.form
 				.logo-beavent2

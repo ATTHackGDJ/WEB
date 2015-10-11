@@ -1,56 +1,25 @@
-html
-	head
-		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')        
-		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
-		//- link(href='/stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')   
-		link(rel='stylesheet', href='/stylesheets/normalize.css')
-		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
-		link(rel='stylesheet', href='/stylesheets/dashboard.css')
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-		script(src='jquery.fullscreen-popup.js')
-		script(src='javascripts/function.js')
-		title Beacon Event
-	body
-		header
-			.nav-stacked.left-bar
-				a(href='#beacon')
-					.add-button
-						h2.left-buttons
-						i.fa.fa-plus.fa-2x &nbsp; Beacon
-				a(href='#event')
-					.add-button
-						h2.left-buttons
-						i.fa.fa-plus.fa-2x &nbsp; Event
-				a(href='/')
-					.logout
-						h2.left-buttons  
-						i.fa.fa-sign-out.fa-2x  &nbsp; Logout
-			.content
-				h1.title Add new Event
-				.form-event(id='event')
-					form(action='/login' method='POST')
-							.fisrt
-							h4.tags Nombre del Evento
-							input.user(type='text' name='name' placeholder='Nombre...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre...'")
-							h4.tags Descripcion
-							input.description(type='textarea' name='despription' placeholder='Descripcion...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Descripcion'")
-							h4.tags Lugar
-							input.user(type='text' name='name' placeholder='Lugar...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lugar...'")
-							.combobox
-								.left
-									h4.tags Elige una Fecha
-								.rigth
-									h4.tags-rigth Asigna un Beacon
-								input.date(type='date' name='event-date' value='1990-12-31T23:59:60Z')
-								select
-									option Elige un Beacon
-									option Beacon Verde
-							
-							h4.tags ¿No hay ninguno? Crea uno nuevo
-								h4.tags ID del Beacon
-								input.user(type='text' name='name' placeholder='ID...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Id...'")
-								h4.tags(id='beacon') Nombre del Beacon
-								input.user(type='text' name='name' placeholder='Nombre...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre...'")
-							button.send-data(type='submit' name='action') 
-								i.fa.fa-send.fa-1x Crear
+extends layout
+block content
+	header
+		.nav-stacked.left-bar
+			a(href='/dashboard')
+				.add-button
+					h2.left-buttons
+					i.fa.fa-plus.fa-2x &nbsp; Place
+			a(href='/dashboard/rooms')
+				.add-button
+					h2.left-buttons
+					i.fa.fa-plus.fa-2x &nbsp; Room
+			a(href='/dashboard/events')
+				.add-button
+					h2.left-buttons
+					i.fa.fa-plus.fa-2x &nbsp; Event
+			a(href='/dashboard/activities')
+				.add-button
+					h2.left-buttons
+					i.fa.fa-plus.fa-2x &nbsp; Activity
+			a(href='/')
+				.logout
+					h2.left-buttons  
+					i.fa.fa-sign-out.fa-2x  &nbsp; Logout
+		block form

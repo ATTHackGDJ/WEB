@@ -1,0 +1,17 @@
+extends dashboard
+block form
+	.content
+		h1 Add new Room
+		.form-event(id='room')
+			form
+				.fisrt
+					h4.tags Nombre de la sala
+					input.user(id='name-id' type='text' name='name' placeholder='Nombre...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre...'")
+					h4.tags Beacon Factory ID
+					input.user(id='beacon-id' type='text' name='name' placeholder='ID...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Id...'")
+					h4.tags-rigth ¿A que lugar pertenece la habitacion?
+					select(style='position:relative !important')
+						option Elige un lugar
+						option Expo Guadalajara
+					button.send-data(id='send-room-button' type='submit' name='action') 
+						i.fa.fa-send.fa-1x Crear
