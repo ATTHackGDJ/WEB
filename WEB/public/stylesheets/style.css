@@ -1,3 +1,7 @@
+
+header, main, footer{
+	z-index:0;
+}
 a {
   color: #E8EAF6;
 }
@@ -14,6 +18,7 @@ a:link, a:visited{
 	  ),
 	  url(/images/image1.jpg);
 	height: 100%;
+	/*-webkit-filter: blur(5px);*/
 }
 .title{
 	color: #E8EAF6;
@@ -107,6 +112,82 @@ i{
 	border: 2px solid #E8EAF6;
 	border-radius: 5px;
 }
+.open-popup{
+	/*position:absolute;*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	display:none;
+	width: 100%;
+	height: 100%;
+	background: rgba(63, 81, 181, 0.5);
+}
+.col-md-4.form1{
+	padding-left:50px;
+	height:20%;
+	margin-left:32.5%;
+	text-align:center;
+
+}
+.col-md-4.form h1.title{
+	padding-left:0px;
+
+}
+input.user{
+	background:transparent;
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	color: #E8EAF6;
+	text-align: center;
+	border: 2px solid #E8EAF6;
+	border-radius: 2px;
+	margin: 10px;
+}
+input.user::placeholder{
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	color:#E8EAF6;
+	text-align: center;
+	border: 2px solid #E8EAF6;
+	border-radius: 2px;
+	margin: 10px;
+}
+input.user::-webkit-input-placeholder{
+	color:#E8EAF6;
+}
+input.user::-webkit-input-placeholder {
+   color: #CCCCCC;
+   position:relative;
+   padding-left:0;
+    -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: padding 0.5s;
+}
+
+button.login-button{
+	background: transparent;
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	color:#E8EAF6;
+	text-align: center;
+	border: 2px solid #E8EAF6;
+	border-radius: 2px;
+	margin: 10px;
+}
+button.login-button:hover{
+	background-color: rgba(63, 81, 181, 0.5);
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	text-align: center;
+	border: 2px solid #E8EAF6;
+	border-radius: 2px;
+	margin: 10px;
+}
+
 .drop-down{
 	margin-left: 48%;
 	margin-top: 25%;

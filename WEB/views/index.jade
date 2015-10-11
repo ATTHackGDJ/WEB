@@ -5,11 +5,13 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
 		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-		script(src='/javascripts/function.js')
+		script(src='jquery.fullscreen-popup.js')
+		script(src='javascripts/function.js')
+		title Beacon Event
 	body
 		header.container-fluid.introduction
-			a(href='/login')
-				.col-md-1.login.login(action='/login')
+			a(href='#popup' class='openPopup' data-rel='popup' data-transition='pop')
+				.col-md-1.login.login
 					h3 Login 
 			h1.title Mobile App Hackathon
 			.col-md-8
@@ -35,8 +37,25 @@ html
 					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
 		footer.container-fluid.phrase.center
 				h1.title2 Descubre la experiencia de la app
-				a(href='/login')
+				a(href='#popup')
 					.button-login Entra ahora
+		.open-popup(id='popup' data-role='popup')
+			a(href='#close')
+				.col-md-1.login.login
+					i.fa.fa-times.fa-2x.ligth
+			.col-md-4.form
+				h1.title Sing In
+				form(action='/login' method='POST')
+						input.user(type='text' name='email' placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'")
+						input.user(type='password' name='password' placeholder='Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'")
+						button.login-button(type='submit' name='action') Sing In
+			//- .col-md-4.form
+			//- 	h1.title Sing Up
+			//- 	form(action='/login' method='POST')
+			//- 			input.user(type='text' name='email' placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'")
+			//- 			input.user(type='password' name='password' placeholder='Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'")
+			//- 			input.user(type='password' name='password' placeholder='Confirm Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'")
+			//- 			button.login-button(type='submit' name='action') Sing Up
 
 
 

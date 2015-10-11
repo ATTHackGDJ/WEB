@@ -6,16 +6,24 @@ jq.onload = animations;
 
 function animations()
 {
-	$(document).ready(function(){
-	    $('a[href^="#down"]').click(function(e) {
-	        e.preventDefault();
-	        var target = this.hash, $target = $(target);
-	        $('html, body').stop().animate({
-	            'scrollDown': $target.offset().top
-	        }, 900, 'swing', function() {
-	            window.location.hash = target;
-	        });
-	    });
+	$(document).ready(function() { 
+
+	    $("main").niceScroll();
+
+	  }
+
+	);
+	$document().ready(function() {
+		on(){
+		$('#openPopup').click(function() {
+			$('#popup').show(400, function(){
+			});
+			/* Act on the event */
+		});
+
+		}
+		
 	});
 
 }
+
