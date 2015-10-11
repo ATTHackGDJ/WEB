@@ -21,7 +21,11 @@ a:link, a:visited{
 /*	padding-left: 2%;
 	
 	padding-right: 2%;*/
-	float: left;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
 	background-color: #3F51B5;
 	height:100%;
 	width:18%;
@@ -32,49 +36,96 @@ a:link, a:visited{
 .title{
 	color: #3F51B5;
 	font-size: 3em;
+	margin-bottom: 50px;
 }
 h4{
 	padding-left: 10px;
 }
+i{
+	padding:5px;
+}
 .logout{
-	position: fixed;
+	margin-top:210%;
 	bottom: 0px;
 	text-align: center;
 }
 .logout:hover{
-	position: fixed;
-	bottom: 0px;
 	text-align: center;
 	background-color: #E8EAF6;
 	color: #3F51B5;
 
 }
 .add-button{
-	text-align: center;
+	text-align: left;
+	padding-left: 20px;
 	border-bottom: 2px solid #c5cae9;
 }
 .add-button:hover{
-	text-align: center;
+	text-align: left;
+	padding-left: 20px;
 	color: #3F51B5;
 	background-color: #E8EAF6;
 	border-bottom: 2px solid #3F51B5;;
 }
 .left-buttons{
 	color: #E8EAF6;
+	text-align: center;
 }
 .content{
-	padding-left: 2%;
+	z-index: 0;
+	padding-left: 4%;
 	width: 82%;
 	background-color: #E8EAF6;
 	float: right;
 }
+.form-event{
+	padding-left:15%;
+}
 input.user{
 	background: transparent;
 	height: 50px;
-	width: 300px;
-	font-size: 2em;
+	width: 500px;
+	font-size: 1.5em;
 	color: #3F51B5;
-	text-align: center;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+}
+input.description{
+	background: transparent;
+	height: 200px;
+	width: 500px;
+	font-size: 1em;
+	color: #3F51B5;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+
+}
+input.description::placeholder{
+	background: transparent;
+	height: 200px;
+	width: 500px;
+	font-size: 1em;
+	color: #3F51B5;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+
+}
+input.date{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	height: 50px;
+	width: 200px;
+	font-size: 1em;
+	color: #3F51B5;
+	text-align: left;
 	border: 2px solid #3F51B5;
 	border-radius: 2px;
 	margin: 10px;
@@ -82,9 +133,34 @@ input.user{
 input.user::placeholder{
 	height: 50px;
 	width: 300px;
-	font-size: 2em;
+	font-size: 1.5em;
 	color:#3F51B5;
-	text-align: center;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+}
+select{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: transparent;
+	height: 50px;
+	width: 200px;
+	font-size: 1em;
+	color: #3F51B5;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+option{
+	background: transparent;
+	height: 50px;
+	width: 200px;
+	font-size: 1em;
+	color: #3F51B5;
+	text-align: left;
 	border: 2px solid #3F51B5;
 	border-radius: 2px;
 	margin: 10px;
@@ -99,25 +175,57 @@ input.user::-webkit-input-placeholder {
     -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
     transition: padding 0.5s;
 }
+.tags{
+	color: #3F51B5;
+
+}
+.tags-rigth{
+
+	color: #3F51B5;
+}
+.combobox{
+	position: relative;
+	width: 500px;
+	height: 100px;
+	border-bottom: 2px solid #3F51B5;
+
+}
+.left{
+	position: absolute;
+	left:0;
+	top: 0;
+}
+.rigth{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 
 button.send-data{
-	background: transparent;
+	position: fixed;
+	box-shadow: 2px 0px 10px #888888;
+	right: 0;
+	bottom: 0;
+	background: #3F51B5;
 	height: 50px;
-	width: 300px;
+	width: 250px;
 	font-size: 2em;
 	color:#E8EAF6;
 	text-align: center;
-	border: 2px solid #E8EAF6;
-	border-radius: 2px;
+	border-radius: 10px;
 	margin: 10px;
 }
-button.send-data:hover{
-	background-color: rgba(63, 81, 181, 0.5);
+button.send-data:active{
+	position: fixed;
+	box-shadow: 2px 0px 10px #888888;
+	right: 0;
+	bottom: 0;
+	background: #3F51B5;
 	height: 50px;
-	width: 300px;
+	width: 250px;
 	font-size: 2em;
+	color:#E8EAF6;
 	text-align: center;
-	border: 2px solid #E8EAF6;
-	border-radius: 2px;
+	border-radius: 10px;
 	margin: 10px;
 }

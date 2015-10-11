@@ -14,18 +14,43 @@ html
 	body
 		header
 			.nav-stacked.left-bar
-				a(href='/')
+				a(href='#beacon')
 					.add-button
-						h4.left-buttons Add Beacon
-				a(href='/')
+						h2.left-buttons
+						i.fa.fa-plus.fa-2x &nbsp; Beacon
+				a(href='#event')
 					.add-button
-						h4.left-buttons Add Event
+						h2.left-buttons
+						i.fa.fa-plus.fa-2x &nbsp; Event
 				a(href='/')
 					.logout
-						h4.left-buttons  Logout
+						h2.left-buttons  
+						i.fa.fa-sign-out.fa-2x  &nbsp; Logout
 			.content
 				h1.title Add new Event
-				form(action='/login' method='POST')
-						input.user(type='text' name='email' placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'")
-						input.user(type='password' name='password' placeholder='Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'")
-						button.login-button(type='submit' name='action') 
+				.form-event(id='event')
+					form(action='/login' method='POST')
+							.fisrt
+							h4.tags Nombre del Evento
+							input.user(type='text' name='name' placeholder='Nombre...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre...'")
+							h4.tags Descripcion
+							input.description(type='textarea' name='despription' placeholder='Descripcion...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Descripcion'")
+							h4.tags Lugar
+							input.user(type='text' name='name' placeholder='Lugar...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lugar...'")
+							.combobox
+								.left
+									h4.tags Elige una Fecha
+								.rigth
+									h4.tags-rigth Asigna un Beacon
+								input.date(type='date' name='event-date' value='1990-12-31T23:59:60Z')
+								select
+									option Elige un Beacon
+									option Beacon Verde
+							
+							h4.tags ¿No hay ninguno? Crea uno nuevo
+								h4.tags ID del Beacon
+								input.user(type='text' name='name' placeholder='ID...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Id...'")
+								h4.tags(id='beacon') Nombre del Beacon
+								input.user(type='text' name='name' placeholder='Nombre...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre...'")
+							button.send-data(type='submit' name='action') 
+								i.fa.fa-send.fa-1x Crear
