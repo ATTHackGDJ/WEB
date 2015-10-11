@@ -37,6 +37,7 @@ function animations() {
 					});
 			});
 			$('#send-event-button').click(function(e) {
+				alert('Listo');
 				e.preventDefault();
 				var initial = $('#initial-id').val();
 				var finish = $('#finish-id').val();
@@ -48,10 +49,11 @@ function animations() {
 						finishTime: new Date(finish, 12, 30, 0)
 					})
 					.done(function () {
-						alert('Listo');
+						
 					});
 			});
 			$('#send-activity-button').click(function(e) {
+				alert('Listo');
 				e.preventDefault();
 				var initial = $('#initial-id').val();
 				var finish = $('#finish-id').val();
@@ -65,7 +67,7 @@ function animations() {
 						finishTime: new Date(finish, 12, 30, 0)
 					})
 					.done(function () {
-						alert('Listo');
+						
 					});
 			});
 	});
