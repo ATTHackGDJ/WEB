@@ -29,8 +29,8 @@ a:link, a:visited{
 .introduction{
 	background:
 	  linear-gradient(
-	    rgba(63, 81, 181, 0.45),
-	    rgba(63, 81, 181, 0.45)
+	    rgba(63, 81, 181, 0.50),
+	    rgba(63, 81, 181, 0.50)
 	  ),
 	  url(/images/image1.jpg);
 	height: 100%;
@@ -103,7 +103,7 @@ i{
 		  ),
 		  url(/images/image8.jpg);
 	color: #E8EAF6;
-	height: 50%;
+	height: 55%;
 	padding: 0px;
 	margin: 0px;
 }

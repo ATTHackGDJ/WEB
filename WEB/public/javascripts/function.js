@@ -13,27 +13,29 @@ function animations() {
 				$('#popup').fadeOut('slow');
 			});
 			$('#send-place-button').click(function(e) {
+				alert('Listo');
 				e.preventDefault();
 				$
-					.post('http://9da38a76.ngrok.io/places', {
+					.post('http://d7fceb97.ngrok.io/places', {
 						name: $('#name-id').val(),
 						organization: 2,
 						beaconFactoryID: $('#beacon-id').val()
 					})
 					.done(function () {
-						alert('Listo');
+						
 					});
 			});
 			$('#send-room-button').click(function(e) {
+				alert('Listo');
 				e.preventDefault();
 				$
-					.post('http://9da38a76.ngrok.io/rooms', {
+					.post('http://d7fceb97.ngrok.io/rooms', {
 						name: $('#name-id').val(),
 						place: 2,
 						beaconFactoryID: $('#beacon-id').val()
 					})
 					.done(function () {
-						alert('Listo');
+						
 					});
 			});
 			$('#send-event-button').click(function(e) {
@@ -42,7 +44,7 @@ function animations() {
 				var initial = $('#initial-id').val();
 				var finish = $('#finish-id').val();
 				$
-					.post('http://9da38a76.ngrok.io/events', {
+					.post('http://d7fceb97.ngrok.io/events', {
 						name: $('#name-id').val(),
 						place: 2,
 						initialTime: new Date(initial, 12, 0, 0),
@@ -58,7 +60,7 @@ function animations() {
 				var initial = $('#initial-id').val();
 				var finish = $('#finish-id').val();
 				$
-					.post('http://9da38a76.ngrok.io/activities', {
+					.post('http://d7fceb97.ngrok.io/activities', {
 						name: $('#name-id').val(),
 						description: $('#description-id').val(),
 						room: 2,
