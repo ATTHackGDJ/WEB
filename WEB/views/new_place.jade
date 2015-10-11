@@ -1,7 +1,7 @@
 extends dashboard
 block form
 	.content
-		h1 Add new Place
+		h1.title Add new Place
 		.form-event(id='place')
 			form
 				.fisrt
@@ -10,4 +10,4 @@ block form
 					h4.tags Beacon Factory ID
 					input.user(id='beacon-id' type='text' name='name' placeholder='ID...' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Id...'")
 					button.send-data(id='send-place-button' type='submit' name='action') 
-						i.fa.fa-send.fa-1x Crear
+						i.fa.fa-send.fa-1x &nbsp; Crear

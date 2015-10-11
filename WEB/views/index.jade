@@ -1,7 +1,14 @@
-extends layout
-block title_content
-			title Beacon Event
-block content
+html5
+	head
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+		script(src='jquery.fullscreen-popup.js')
+		script(src='/javascripts/function.js')
+		link(rel='icon' href='images/favicon.png')
+	body
 		header.container-fluid.introduction
 			a(href='#popup' id='openPopup' data-rel='popup' data-transition='pop')
 				.col-md-1.login.login
@@ -42,7 +49,7 @@ block content
 					h4.landing-color Haz networking con personas con las que tienes gustos en común.
 		footer.container-fluid.phrase.center
 				h1.title2 Descubre la experiencia de la app
-				a(href='#popup')
+				a(href='/dashboard')
 					.button-login Entra ahora
 		.open-popup(id='popup' data-role='popup')
 			a(href='#close' id='close')

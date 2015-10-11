@@ -45,7 +45,7 @@ i{
 	padding:5px;
 }
 .logout{
-	margin-top:210%;
+	margin-top:160%;
 	bottom: 0px;
 	text-align: center;
 }
@@ -82,6 +82,29 @@ i{
 	padding-left:15%;
 }
 input.user{
+	background: transparent;
+	height: 50px;
+	width: 500px;
+	font-size: 1.5em;
+	color: #3F51B5;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+}
+input.file{
+	background: transparent;
+	height: 50px;
+	width: 500px;
+	font-size: 1.5em;
+	color: #3F51B5;
+	text-align: left;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+	margin-bottom: 50px;
+}
+.custom-file-upload{
 	background: transparent;
 	height: 50px;
 	width: 500px;
@@ -145,6 +168,7 @@ select{
 	bottom: 0;
 	right: 0;
 	background: transparent;
+	margin-left: 10px;
 	height: 50px;
 	width: 200px;
 	font-size: 1em;
