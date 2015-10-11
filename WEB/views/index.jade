@@ -1,14 +1,7 @@
-html
-	head
-		link(rel='stylesheet', href='/stylesheets/normalize.css')
-		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
-		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-		script(src='jquery.fullscreen-popup.js')
-		script(src='javascripts/function.js')
-		title Beacon Event
-	body
+extends layout
+block title_content
+			title Beacon Event
+block content
 		header.container-fluid.introduction
 			a(href='#popup' class='openPopup' data-rel='popup' data-transition='pop')
 				.col-md-1.login.login
@@ -24,17 +17,17 @@ html
 				.col-md-4
 					i.fa.fa-map-marker.fa-5x.landing-color
 					h2.information Descubre
-					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+					h4.landing-color Lugares con los eventos en los que quieres estar.
 
 				.col-md-4
 					i.fa.fa-mobile.fa-5x.landing-color
-					h2.information Descubre
-					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+					h2.information Explora
+					h4.landing-color Deja que tu smart-phone te guíe a los mejores eventos con las mejores personalidades.
 
 				.col-md-4
 					i.fa.fa-users.fa-5x.landing-color
-					h2.information Descubre
-					h4.landing-color Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+					h2.information Conoce
+					h4.landing-color Haz networking con personas con las que tienes gustos en común.
 		footer.container-fluid.phrase.center
 				h1.title2 Descubre la experiencia de la app
 				a(href='#popup')
@@ -58,7 +51,3 @@ html
 			//- 			input.user(type='password' name='password' placeholder='Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'")
 			//- 			input.user(type='password' name='password' placeholder='Confirm Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'")
 			//- 			button.login-button(type='submit' name='action') Sing Up
-
-
-
-

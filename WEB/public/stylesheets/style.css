@@ -5,7 +5,7 @@ header, main, footer{
 a {
   color: #E8EAF6;
 }
-a:link, a:visited{	
+a:link, a:visited{
 	color: #E8EAF6;
 	text-decoration: none;
 }
@@ -24,14 +24,14 @@ a:link, a:visited{
 	margin-top: 10px;
 }
 .introduction{
-	background:  
+	background:
 	  linear-gradient(
-	    rgba(63, 81, 181, 0.45), 
+	    rgba(63, 81, 181, 0.45),
 	    rgba(63, 81, 181, 0.45)
 	  ),
 	  url(/images/image1.jpg);
 	height: 100%;
-	-webkit-filter: blur(5px);
+	/*-webkit-filter: blur(5px);*/
 }
 .title{
 	color: #E8EAF6;
@@ -57,7 +57,7 @@ a:link, a:visited{
 	float: right;
 	text-align: right;
 }
-.col-md-2.login.login:hover { 
+.col-md-2.login.login:hover {
     background-color: #E8EAF6;
     color: #3F51B5;
 
@@ -93,12 +93,12 @@ i{
 	color: #3F51B5;
 }
 .container-fluid.phrase{
-	background:  
+	background:
 		  linear-gradient(
-		    rgba(63, 81, 181, 0.65), 
+		    rgba(63, 81, 181, 0.65),
 		    rgba(63, 81, 181, 0.65)
 		  ),
-		  url(/images/image8.jpg); 
+		  url(/images/image8.jpg);
 	color: #E8EAF6;
 	height: 40%;
 	padding: 0px;
@@ -216,5 +216,3 @@ button.login-button:hover{
 	to{}
 
 }
-
-
