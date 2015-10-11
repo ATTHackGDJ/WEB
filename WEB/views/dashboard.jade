@@ -16,13 +16,16 @@ html
 			.nav-stacked.left-bar
 				a(href='/')
 					.add-button
-						h4.left-buttons Add Event
+						h4.left-buttons Add Beacon
 				a(href='/')
 					.add-button
 						h4.left-buttons Add Event
 				a(href='/')
 					.logout
-						h4.left-buttons  Add Event
+						h4.left-buttons  Logout
 			.content
-
-
+				h1.title Add new Event
+				form(action='/login' method='POST')
+						input.user(type='text' name='email' placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'")
+						input.user(type='password' name='password' placeholder='Password' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'")
+						button.login-button(type='submit' name='action') 

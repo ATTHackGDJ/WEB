@@ -21,12 +21,20 @@ a:link, a:visited{
 /*	padding-left: 2%;
 	
 	padding-right: 2%;*/
+	float: left;
 	background-color: #3F51B5;
 	height:100%;
 	width:18%;
 	box-shadow: 2px 0px 10px #888888;
 	text-decoration: none;
 	color: #E8EAF6;
+}
+.title{
+	color: #3F51B5;
+	font-size: 3em;
+}
+h4{
+	padding-left: 10px;
 }
 .logout{
 	position: fixed;
@@ -53,4 +61,63 @@ a:link, a:visited{
 }
 .left-buttons{
 	color: #E8EAF6;
+}
+.content{
+	padding-left: 2%;
+	width: 82%;
+	background-color: #E8EAF6;
+	float: right;
+}
+input.user{
+	background: transparent;
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	color: #3F51B5;
+	text-align: center;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+}
+input.user::placeholder{
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	color:#3F51B5;
+	text-align: center;
+	border: 2px solid #3F51B5;
+	border-radius: 2px;
+	margin: 10px;
+}
+input.user::-webkit-input-placeholder{
+	color:#3F51B5;
+}
+input.user::-webkit-input-placeholder {
+   color: #3F51B5;
+   position:relative;
+   padding-left:0;
+    -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: padding 0.5s;
+}
+
+button.send-data{
+	background: transparent;
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	color:#E8EAF6;
+	text-align: center;
+	border: 2px solid #E8EAF6;
+	border-radius: 2px;
+	margin: 10px;
+}
+button.send-data:hover{
+	background-color: rgba(63, 81, 181, 0.5);
+	height: 50px;
+	width: 300px;
+	font-size: 2em;
+	text-align: center;
+	border: 2px solid #E8EAF6;
+	border-radius: 2px;
+	margin: 10px;
 }
